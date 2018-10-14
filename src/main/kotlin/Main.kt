@@ -1,38 +1,25 @@
 package com.test
 
-import java.io.BufferedReader
-import java.io.InputStreamReader
+import com.test.task3.Student
+import com.test.task3.Teacher
 
 class Main {
 
     companion object {
 
-        var calculator: Calculator? = null
-
         @JvmStatic
         fun main(args: Array<String>) {
-//            val triagle1 = Triagle()
-//            val triagle2 = Triagle(1,3)
-//
-//            print(triagle1 == triagle2)
-//            print(triagle2.isExist())
-//            print(triagle2.perimeter())
-            if (args.isEmpty()) {
-                while (true) {
+            //val notePad = NotePad("name", "description")
+            //notePad.capsDescription(0)
+            //notePad.oneNodePadClass.capsDescription(0)
+            //print(notePad.notePads[0].description)
+            //val customString: CustomString = CustomString(Word(), Symbol())
 
-
-                    val bufferReader = BufferedReader(InputStreamReader(System.`in`))
-                    val commands: List<String> = bufferReader.readLine().split(" ")
-
-                    if (calculator == null) {
-                        calculator = Calculator()
-                    }
-
-                    calculator!!.commandsFromConsole(commands)
-                }
-            } else {
-                Calculator("./src/main/kotlin/TEST.txt")
-            }
+            val teacher: Teacher = Teacher("Alexander", "Kroshenko")
+            teacher.createCource("Java", "Kurs po java dlia PO-1", "JAVA", 42)
+            val student: Student = Student("Stas", "Bushuk")
+            student.subscribeToCource("Java")
+            teacher.setOcenka(10, student, "Java")
         }
     }
 }
