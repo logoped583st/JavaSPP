@@ -1,0 +1,1 @@
+/Users/ws-015-11b/IdeaProjects/lab2Task2/build/classes/kotlin/main/com/test/Main$Companion.class:/Users/ws-015-11b/IdeaProjects/lab2Task2/build/classes/kotlin/main/com/test/Main.class
