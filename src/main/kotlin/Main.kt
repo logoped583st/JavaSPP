@@ -15,9 +15,9 @@ class Main {
             //print(notePad.notePads[0].description)
             //val customString: CustomString = CustomString(Word(), Symbol())
 
-            val teacher: Teacher = Teacher("Alexander", "Kroshenko")
+            val teacher = Teacher("Alexander", "Kroshenko")
             teacher.createCource("Java", "Kurs po java dlia PO-1", "JAVA", 42)
-            val student: Student = Student("Stas", "Bushuk")
+            val student = Student("Stas", "Bushuk")
             student.subscribeToCource("Java")
             teacher.setOcenka(10, student, "Java")
         }

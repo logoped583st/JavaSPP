@@ -8,6 +8,7 @@ class Student(override val firstName: String, override val secondName: String) :
         Cources.cources.forEach {
             if (it.name == courceName) {
                 cources.add(it)
+                Cources.cources[Cources.cources.indexOf(it)].studentSubscribe(this)
             }
         }
     }

@@ -5,7 +5,6 @@ class Teacher(override val firstName: String, override val secondName: String) :
     val teacherCource: ArrayList<Cources.Cource> = ArrayList()
 
     fun setOcenka(ocenka: Int, student: Student, courceName: String) {
-
         var cource: Cources.Cource? = null
         teacherCource.forEach {
             if (it.name == courceName) {
