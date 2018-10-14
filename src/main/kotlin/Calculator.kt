@@ -53,7 +53,7 @@ class Calculator() {
             "PRINT" -> CommandUtils.print(stack)
 
             "DEFINE" -> {
-                CommandUtils.define(string[counter], string[counter + 1], string[counter + 2].toDouble())
+                CommandUtils.define(string[counter + 1], string[counter + 2].toDouble())
                 counter += 2
             }
 

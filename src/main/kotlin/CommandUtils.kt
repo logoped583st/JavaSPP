@@ -89,7 +89,7 @@ object CommandUtils {
         }
     }
 
-    fun define(command: String, key: String, value: Double) {
+    fun define(key: String, value: Double) {
         defined[key] = value
     }
 }
