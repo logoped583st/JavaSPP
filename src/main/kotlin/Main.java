@@ -1,26 +1,16 @@
-import com.test.Stack;
+package com.blogspot.nikcode.complex;
 
-import java.util.Scanner;
+import com.blogspot.nikcode.complex.ui.MandelbrotSetFrame;
+import javax.swing.JFrame;
 
+/**
+ *
+ * @author nik
+ */
 public class Main {
 
-
     public static void main(String[] args) {
-        Stack<String> s = new Stack<String>();
-
-        Scanner scanner = new Scanner(System.in);
-
-        while (scanner.hasNext()) {
-            String item = scanner.next();
-            if (!item.equals("-")) {
-                s.push(item);
-            } else if (!s.isEmpty()) {
-                System.out.println(s.pop() + " ");
-            }
-        }
-
-        System.out.println(s.size());
+        JFrame jFrame = new MandelbrotSetFrame();
+        jFrame.setVisible(true);
     }
 }
-
-
