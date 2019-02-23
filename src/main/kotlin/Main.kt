@@ -23,6 +23,8 @@ class Main {
                 statement.executeUpdate("UPDATE LESONS SET DESCRIPTION = 'KOTLIN!' where DESCRIPTION = 'JAVA'")
                 statement.executeUpdate("UPDATE STUDENT SET FIRST_NAME = 'STANISLAU' where FIRST_NAME = 'Stas'")
 
+                statement.executeUpdate("DELETE FROM STUDENT where FIRST_NAME = '!Stas'")
+
 
                 val map: Map<String, String> = mutableMapOf()
                 val result = statement.executeQuery("SELECT * FROM GROUP_STUDENT INNER JOIN STUDENT S on GROUP_STUDENT.ID = S.\"group_studing\"")
