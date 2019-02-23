@@ -1,0 +1,21 @@
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.control.TextField?>
+<TilePane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10"
+          vgap="10">
+    <Text text="N-parameter"/>
+    <TextField fx:id="n_param"/>
+    <Button fx:id="btn_play"
+            text="Start"/>
+    <Button disable="true"
+            text="Pause"
+            fx:id="btn_pause_resume"/>
+
+    <Button disable="true"
+            text="Stop"
+            fx:id="btn_stop"/>
+    <Text text="Result"/>
+    <Text text="0" fx:id="result_text"/>
+</TilePane>
