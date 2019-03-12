@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Button id="btn_dekanat" mnemonicParsing="false" text="Dekanat" />
+      <Button id="btn_kafedra" mnemonicParsing="false" text="Kafedra" GridPane.columnIndex="1" />
+      <Button id="btn_lesons" mnemonicParsing="false" text="Lesons" GridPane.columnIndex="2" />
+      <Button id="btn_students" mnemonicParsing="false" text="Students" GridPane.rowIndex="1" />
+      <Button id="btn_teachers" mnemonicParsing="false" text="Teachers" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button id="btn_groups" mnemonicParsing="false" text="Groups" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+   </children>
+</GridPane>

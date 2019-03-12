@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="lbl_id" layoutX="35.0" layoutY="60.0" text="id" />
+      <TextField id="area_name" layoutX="71.0" layoutY="55.0" />
+      <TextField id="area_language" layoutX="254.0" layoutY="55.0" />
+      <ChoiceBox id="spin_teacher" layoutX="92.0" layoutY="89.0" prefWidth="150.0" />
+      <ChoiceBox id="spin_group" layoutX="275.0" layoutY="89.0" prefWidth="150.0" />
+      <Button id="btn_update" layoutX="223.0" layoutY="145.0" mnemonicParsing="false" text="Update" />
+   </children>
+</AnchorPane>

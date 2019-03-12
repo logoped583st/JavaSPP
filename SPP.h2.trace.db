@@ -1,0 +1,6 @@
+2019-03-09 16:44:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "GROUP_STUDENT" not found; SQL statement:
+SELECT * FROM GROUP_STUDENT INNER JOIN STUDENT S on GROUP_STUDENT.ID = S."group_studing" [42102-198]
+2019-03-09 16:46:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "GROUP_STUDENT" not found; SQL statement:
+SELECT * FROM GROUP_STUDENT INNER JOIN STUDENT S on GROUP_STUDENT.ID = S."group_studing" [42102-198]
